@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.healthy.sample">
+	<logger name="com.healthy.controller">
 		<level value="info" />
 	</logger>
 	
