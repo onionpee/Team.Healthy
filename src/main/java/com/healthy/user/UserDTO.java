@@ -16,6 +16,12 @@ public class UserDTO implements UserService{
 		userMapper.userJoin(user);
 		
 	}
+	
+	@Override
+	public UserDAO userCheck(UserDAO user) throws Exception {
+		
+		return userMapper.userCheck(user);
+	}
 
 	
 }

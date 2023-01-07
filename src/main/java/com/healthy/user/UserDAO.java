@@ -54,4 +54,10 @@ public class UserDAO {
 	public void setRegDate(String regDate) {
 		this.regDate = regDate;
 	}
+
+	@Override
+	public String toString() {
+		return "UserDAO [userId=" + userId + ", userName=" + userName + ", userPW=" + userPW + ", userEmail="
+				+ userEmail + ", regDate=" + regDate + "]";
+	}
 }

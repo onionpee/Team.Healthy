@@ -8,4 +8,6 @@ import com.healthy.user.UserDAO;
 public interface userMapper {
 
 	public void userJoin(UserDAO user);
+	
+	public UserDAO userCheck(UserDAO user);
 }

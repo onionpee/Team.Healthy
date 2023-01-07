@@ -7,5 +7,9 @@
 	<insert id="userJoin">
 		insert into user values (#{userId}, #{userPW}, #{userName}, #{userEmail}, now())
 	</insert>
+	
+	<select id="userCheck" resultType="com.healthy.user.UserDAO">
+		select * from user where userid = #{userId} and userpw = #{userPW}
+	</select>
 
 </mapper>

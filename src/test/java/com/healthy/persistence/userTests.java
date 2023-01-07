@@ -19,16 +19,29 @@ public class userTests {
 	@Autowired 
 	private userMapper userMapper;
 	
+//	@Test
+//	public void userJoin() throws Exception {
+//		
+//		UserDAO user = new UserDAO();
+//		
+//		user.setUserId("111");
+//		user.setUserPW("111");
+//		user.setUserName("111");
+//		user.setUserEmail("111");
+//		
+//		userMapper.userJoin(user);
+//	}
+	
 	@Test
-	public void userJoin() throws Exception {
+	public void userCheck() throws Exception {
 		
 		UserDAO user = new UserDAO();
 		
-		user.setUserId("111");
-		user.setUserPW("111");
-		user.setUserName("111");
-		user.setUserEmail("111");
+		user.setUserId("777");
+		user.setUserPW("777");
 		
-		userMapper.userJoin(user);
+		userMapper.userCheck(user);
+		
+		System.out.println("결과 " + userMapper.userCheck(user));
 	}
 }
